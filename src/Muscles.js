@@ -123,11 +123,10 @@ function Muscles() {
     }
   }
   const handleChange = (e) => {
-    const item = e.target.name;
+    const item = e.target.id;
     const isChecked = e.target.checked;
     setChecks(x => x.set(item, isChecked))
-    console.log(e.target);
-    console.log(checks);
+    selectGroup(item)
   }
 
   return (
